@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(240, 240, 240);
+           
+            
+        }
+        #subMain{
+            padding:15px;
+            margin-bottom:10px;
+            margin-left: 30%;
+        }
+        #main{
+          
+          justify-items: center;
+        }
+        form{
+            width: 500px;
+            height:200px;
+            background-color: white;
+            margin-left: 35%;
+            position: relative;
+            align-content: center;
+            padding-top: 0px;
+        }
+        .mobile{
+            width:25px;
+            height: 35px;
+            font-weight: 600;
+            position:absolute;
+            left:24%;
+            top:36%;
+        }
+        span{
+          position: absolute;
+          padding: 0px 5px 0px 5px;
+          margin:-6px 0px 0px 39px;
+          background-color: white;
+          font-size: 12px;
+          z-index:1;
+          left:25%;
+          top:36%;
+        }
+        .number{
+        
+            height: 35px;
+            position:absolute;
+            top:36%;
+           width:220px;
+            left:30%;
+        }
+        #btn{
+            padding:7px;
+            border-radius: 5px;
+
+            position: absolute;
+            left:45%;
+            top:70%;
+        }
+
+        #example:valid+#btn{
+            background-color: green;
+        }
+        #btn1{
+            background-color: rgb(117, 117, 173);
+            position:absolute;
+            padding:10px;
+            border-radius: 3px;
+           left:20%;
+           color: white;
+           margin:5px 20px 0px 0px;
+        }
+        #btn2{
+            background-color: rgb(243, 105, 105);
+            position:absolute;
+            padding:10px;
+            border-radius: 3px;
+            color: white;
+           left:51%;
+           margin:5px 0px 0px 10px;;
+        }
+        #finalDiv{
+             margin-top: 30px;
+              margin-bottom:30px;
+              margin-left:605px;
+              background-color: white;
+              width: 300px;
+               height:100px;
+               position: relative;
+               padding: 20px;
+             
+        }
+        .gg{
+            margin-left: 60px;
+        }
+        #terms{
+           text-decoration: none;
+           margin-left:20px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <img  id="logPizza" width="20%"src="./assets/login_pizza_image.png" style="float:right">
+    <img  style="float:left;"width="30%" src="./assets/Dominos_logo.svg">
+    <br>
+    <br>
+    <div id="main">
+        <br>
+        <br><br>
+    <p style="margin-left: 40%;"><b>Login</b> to unlock awesome new features</p>
+     
+    <div id="subMain">
+        <img class="gg" src="./assets/great_food.svg"> Great Food 
+        <img class="gg" src="./assets/great_offers.svg"> Great Offers 
+        <img class="gg" src="./assets/easy_reorder.svg"> Easy Reordering
+        
+    </div>
+   
+    <form >
+        <br>
+        
+        <p style="position: absolute; top:5%; left:26%" >Login with your valid mobile number</p>
+       
+         
+           <div >
+            <input class="mobile" type="text" placeholder="+91"  disabled >
+           </div>
+           <span >Mobile Number</span>
+       
+           <div id="example">
+           <input class="number" type="text"  maxlength="10" autofocus >
+           </div>
+           <button id="btn">Submit</button>
+        
+    </form>
+</div>
+ 
+<div id="finalDiv">
+    <p align="center">Login with social accounts</p>
+    <div>
+        <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=534179770043053&kid_directed_site=0&app_id=534179770043053&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.9%2Fdialog%2Foauth%3Fapp_id%3D534179770043053%26cbt%3D1709811871912%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Dfce97266d2fdc6208%2526domain%253Dpizzaonline.dominos.co.in%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fpizzaonline.dominos.co.in%25252Ff402f03eb935ff2a1%2526relation%253Dopener%26client_id%3D534179770043053%26display%3Dpopup%26domain%3Dpizzaonline.dominos.co.in%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fpizzaonline.dominos.co.in%252Fmenu%253FcategoryId%253D2%26locale%3Den_US%26logger_id%3Df86c6d59c03d9a2b1%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df50c7df6b7e8b5268%2526domain%253Dpizzaonline.dominos.co.in%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fpizzaonline.dominos.co.in%25252Ff402f03eb935ff2a1%2526relation%253Dopener%2526frame%253Df3f79fad41d2c9331%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Demail%26sdk%3Djoey%26version%3Dv2.9%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df50c7df6b7e8b5268%26domain%3Dpizzaonline.dominos.co.in%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fpizzaonline.dominos.co.in%252Ff402f03eb935ff2a1%26relation%3Dopener%26frame%3Df3f79fad41d2c9331%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=en_GB&pl_dbl=0"><button id="btn1"> <b>FACEBOOK</b></button></a>
+      <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fpizzaonline.dominos.co.in%3Fid%3Dauth103667&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=928101681689-fhhil6jq8g1ftone3bdrt3gfq03bilob.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fpizzaonline.dominos.co.in&prompt&fetch_basic_profile=true&gsiwebsdk=2&service=lso&o2v=1&theme=mn&flowName=GeneralOAuthFlow"><button id="btn2"><b>GOOGLE</b></button> </a>
+    </div>
+</div>
+
+<div align="center" ><a href="https://pizzaonline.dominos.co.in/tnc" id="terms">TERMS OF USE</a></div>
+
+</body>
+</html>
